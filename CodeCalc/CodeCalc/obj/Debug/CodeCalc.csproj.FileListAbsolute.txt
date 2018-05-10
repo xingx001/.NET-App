@@ -1,0 +1,8 @@
+D:\Work\DEMO\CodeCalc\CodeCalc\bin\Debug\CodeCalc.exe
+D:\Work\DEMO\CodeCalc\CodeCalc\bin\Debug\CodeCalc.pdb
+D:\Work\DEMO\CodeCalc\CodeCalc\obj\Debug\CodeCalc.csprojResolveAssemblyReference.cache
+D:\Work\DEMO\CodeCalc\CodeCalc\obj\Debug\CodeCalc.Properties.Resources.resources
+D:\Work\DEMO\CodeCalc\CodeCalc\obj\Debug\CodeCalc.csproj.GenerateResource.Cache
+D:\Work\DEMO\CodeCalc\CodeCalc\obj\Debug\CodeCalc.exe
+D:\Work\DEMO\CodeCalc\CodeCalc\obj\Debug\CodeCalc.pdb
+D:\Work\DEMO\CodeCalc\CodeCalc\obj\Debug\CodeCalc.FrmMain.resources
