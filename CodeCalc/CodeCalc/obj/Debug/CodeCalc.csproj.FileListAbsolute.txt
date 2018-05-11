@@ -6,3 +6,11 @@ D:\Work\DEMO\CodeCalc\CodeCalc\obj\Debug\CodeCalc.csproj.GenerateResource.Cache
 D:\Work\DEMO\CodeCalc\CodeCalc\obj\Debug\CodeCalc.exe
 D:\Work\DEMO\CodeCalc\CodeCalc\obj\Debug\CodeCalc.pdb
 D:\Work\DEMO\CodeCalc\CodeCalc\obj\Debug\CodeCalc.FrmMain.resources
+D:\c\github\.NET-App\CodeCalc\CodeCalc\bin\Debug\CodeCalc.XML
+D:\c\github\.NET-App\CodeCalc\CodeCalc\bin\Debug\CodeCalc.exe
+D:\c\github\.NET-App\CodeCalc\CodeCalc\bin\Debug\CodeCalc.pdb
+D:\c\github\.NET-App\CodeCalc\CodeCalc\obj\Debug\CodeCalc.FrmMain.resources
+D:\c\github\.NET-App\CodeCalc\CodeCalc\obj\Debug\CodeCalc.Properties.Resources.resources
+D:\c\github\.NET-App\CodeCalc\CodeCalc\obj\Debug\CodeCalc.csproj.GenerateResource.Cache
+D:\c\github\.NET-App\CodeCalc\CodeCalc\obj\Debug\CodeCalc.exe
+D:\c\github\.NET-App\CodeCalc\CodeCalc\obj\Debug\CodeCalc.pdb

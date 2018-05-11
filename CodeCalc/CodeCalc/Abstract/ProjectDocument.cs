@@ -1,4 +1,6 @@
 ﻿using CodeCalc.Analyse;
+using CodeCalc.Collection;
+using CodeCalc.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,9 +1,11 @@
-﻿using System;
+﻿using CodeCalc.Abstract;
+using CodeCalc.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CodeCalc.Abstract
+namespace CodeCalc.Collection
 {
     /// <summary>
     /// 文件实体集合

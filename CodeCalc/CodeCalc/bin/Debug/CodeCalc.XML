@@ -1,0 +1,623 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodeCalc</name>
+    </assembly>
+    <members>
+        <member name="T:CodeCalc.Abstract.FileAnalyser">
+            <summary>
+            文件分析抽象类
+            </summary>
+            <remarks>
+            作者：北冥冰皇
+            创建日期：2018-05-04
+            修改日期：2018-05-04
+            </remarks>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileAnalyser.CheckFileName(System.String)">
+            <summary>
+            校验文件名称
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileAnalyser.CheckFileExtension(System.String)">
+            <summary>
+            校验文件后缀
+            </summary>
+            <param name="extension"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileAnalyser.Analyse(CodeCalc.Entity.FileEntity)">
+            <summary>
+            分析文件
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CodeCalc.Abstract.FileAnalyser.Document">
+            <summary>
+            工程文档
+            </summary>
+        </member>
+        <member name="T:CodeCalc.Analyse.CSFileAnalyser">
+            <summary>
+            分析CS 代码文件的对象
+            </summary>
+            <remarks>
+            本分析器用于分析C#代码文件，统计出源代码的一些信息
+            </remarks>
+        </member>
+        <member name="T:CodeCalc.Analyse.CSProjectDocument">
+            <summary>
+            C# 工程文档
+            </summary>
+            <remarks>
+            作者：北冥冰皇
+            创建日期：2018-05-04
+            修改日期：2018-05-04
+            </remarks>
+        </member>
+        <member name="T:CodeCalc.Abstract.ProjectDocument">
+            <summary>
+            工程文档
+            </summary>
+            <remarks>
+            作者：北冥冰皇
+            创建日期：2018-05-04
+            修改日期：2018-05-04
+            </remarks>
+        </member>
+        <member name="F:CodeCalc.Abstract.ProjectDocument.tick">
+            <summary>
+            耗时毫秒数
+            </summary>
+        </member>
+        <member name="F:CodeCalc.Abstract.ProjectDocument.analysers">
+            <summary>
+            分析对象动态数组
+            </summary>
+        </member>
+        <member name="F:CodeCalc.Abstract.ProjectDocument.results">
+            <summary>
+            分析结果动态数组
+            </summary>
+        </member>
+        <member name="F:CodeCalc.Abstract.ProjectDocument.files">
+            <summary>
+            文件动态数组
+            </summary>
+        </member>
+        <member name="F:CodeCalc.Abstract.ProjectDocument.projectFileName">
+            <summary>
+            工程文件名称
+            </summary>
+        </member>
+        <member name="F:CodeCalc.Abstract.ProjectDocument.rootPath">
+            <summary>
+            根目录名称
+            </summary>
+        </member>
+        <member name="M:CodeCalc.Abstract.ProjectDocument.Create(System.String)">
+            <summary>
+            创建工程文档对象
+            </summary>
+            <param name="projectFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.ProjectDocument.LoadProjectFile(System.String)">
+            <summary>
+            载入工程文件
+            </summary>
+            <param name="fileName">文件名称</param>
+        </member>
+        <member name="M:CodeCalc.Abstract.ProjectDocument.CheckFileName(System.String)">
+            <summary>
+            校验文件名
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.ProjectDocument.GetReader(System.String)">
+            <summary>
+            GB2312编码字节流
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.ProjectDocument.GetFullName(System.String)">
+            <summary>
+            完全文件路径名称
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.ProjectDocument.AnalyseAllFile">
+            <summary>
+            分析所有文件
+            </summary>
+        </member>
+        <member name="M:CodeCalc.Abstract.ProjectDocument.ClearResults">
+            <summary>
+            清除分析结果
+            </summary>
+        </member>
+        <member name="M:CodeCalc.Abstract.ProjectDocument.LoadAnalyseResult(System.String)">
+            <summary>
+            载入XML分析结果
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:CodeCalc.Abstract.ProjectDocument.SaveAnalyseResult(System.String)">
+            <summary>
+            保存XML分析结果
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:CodeCalc.Abstract.ProjectDocument.SaveAnalyseResult(System.Xml.XmlDocument)">
+            <summary>
+            保存XML分析结果
+            </summary>
+            <param name="xml"></param>
+        </member>
+        <member name="P:CodeCalc.Abstract.ProjectDocument.TickCount">
+            <summary>
+            耗时毫秒数
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Abstract.ProjectDocument.Analysers">
+            <summary>
+            分析对象动态数组
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Abstract.ProjectDocument.Results">
+            <summary>
+            分析结果动态数组
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Abstract.ProjectDocument.Files">
+            <summary>
+            文件动态数组
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Abstract.ProjectDocument.ProjectFileName">
+            <summary>
+            工程文件名称
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Abstract.ProjectDocument.RootPath">
+            <summary>
+            根目录名称
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Abstract.ProjectDocument.LastResult">
+            <summary>
+            最后一次分析结果
+            </summary>
+        </member>
+        <member name="M:CodeCalc.Analyse.CSProjectDocument.#ctor">
+            <summary>
+            初始化工程文档
+            </summary>
+        </member>
+        <member name="M:CodeCalc.Analyse.CSProjectDocument.CheckFileName(System.String)">
+            <summary>
+            校验文件名
+            </summary>
+            <param name="fileName">文件名称</param>
+            <returns>校验结果</returns>
+        </member>
+        <member name="M:CodeCalc.Analyse.CSProjectDocument.LoadProjectFile(System.String)">
+            <summary>
+            载入C#工程项目文件
+            </summary>
+            <param name="fileName">文件名</param>
+        </member>
+        <member name="T:CodeCalc.Entity.FileEntity">
+            <summary>
+            文件实体对象
+            </summary>
+            <remarks>
+            作者：北冥冰皇
+            创建日期：2018-05-04
+            修改日期：2018-05-04
+            </remarks>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.Document">
+            <summary>
+            项目文档对象
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.FileName">
+            <summary>
+            文件名称
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.FullName">
+            <summary>
+            文件路径名称
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.Extension">
+            <summary>
+            文件扩展名
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.Analysed">
+            <summary>
+            该文件是否分析过
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.FileSize">
+            <summary>
+            文件大小
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.CreationTime">
+            <summary>
+            文件创建时间
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.ModifiedTime">
+            <summary>
+            文件修改时间
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.CharCount">
+            <summary>
+            字符数
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.LineCount">
+            <summary>
+            总行数
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.CommentCount">
+            <summary>
+            注释行数
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.BlankCount">
+            <summary>
+            空白行数
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.CodeCount">
+            <summary>
+            代码行数
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.FileEntity.Time">
+            <summary>
+            分析时间
+            </summary>
+        </member>
+        <member name="T:CodeCalc.Collection.FileCollection">
+            <summary>
+            文件实体集合
+            </summary>
+            <remarks>
+            作者：北冥冰皇
+            创建日期：2018-05-04
+            修改日期：2018-05-04
+            </remarks>
+        </member>
+        <member name="F:CodeCalc.Collection.FileCollection.document">
+            <summary>
+            工程文档
+            </summary>
+        </member>
+        <member name="M:CodeCalc.Collection.FileCollection.Add(CodeCalc.Entity.FileEntity)">
+            <summary>
+            添加文件实体到集合
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="M:CodeCalc.Collection.FileCollection.Add(System.String)">
+            <summary>
+            按文件名添加实体到集合
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CodeCalc.Collection.FileCollection.Document">
+            <summary>
+            工程文档
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Collection.FileCollection.Time">
+            <summary>
+            分析时间
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Collection.FileCollection.AnalyseTime">
+            <summary>
+            分析时间
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Collection.FileCollection.AnalysedCount">
+            <summary>
+            分析文件个数总和
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Collection.FileCollection.TotalFileSize">
+            <summary>
+            文件大小总和
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Collection.FileCollection.TotalCharCount">
+            <summary>
+            分析文件字符数总和
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Collection.FileCollection.TotalLineCount">
+            <summary>
+            分析文件行数总和
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Collection.FileCollection.TotalCommentCount">
+            <summary>
+            分析文件注释行数总和
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Collection.FileCollection.TotalBlankCount">
+            <summary>
+            分析文件空白行数总和
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Collection.FileCollection.TotalCodeCount">
+            <summary>
+            分析文件代码行数总和
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Collection.FileCollection.Item(System.Int32)">
+            <summary>
+            按索引返回文件实体
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CodeCalc.Entity.ProjectFileEntity">
+            <summary>
+            工程文件实体
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.ProjectFileEntity.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.ProjectFileEntity.CanAnalyse">
+            <summary>
+            是否进行分析
+            </summary>
+        </member>
+        <member name="T:CodeCalc.Analyse.VBFileAnalyser">
+            <summary>
+            VB代码文件分析器
+            </summary>
+        </member>
+        <member name="M:CodeCalc.Analyse.VBFileAnalyser.#ctor">
+            <summary>
+            初始化对象
+            </summary>
+        </member>
+        <member name="M:CodeCalc.Analyse.VBFileAnalyser.CheckFileExtension(System.String)">
+            <summary>
+            检测文件扩展名
+            </summary>
+            <param name="extension"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeCalc.Analyse.VBFileAnalyser.InnerAnalyse">
+            <summary>
+            源代码分析
+            </summary>
+        </member>
+        <member name="T:CodeCalc.Analyse.VBProjectDocument">
+            <summary>
+            VB工程文件对象
+            </summary>
+        </member>
+        <member name="M:CodeCalc.Analyse.VBProjectDocument.#ctor">
+            <summary>
+            初始化对象
+            </summary>
+        </member>
+        <member name="M:CodeCalc.Analyse.VBProjectDocument.CheckFileName(System.String)">
+            <summary>
+            检测项目文件名扩展名
+            </summary>
+            <param name="fileName">项目文件名</param>
+            <returns>是否通过检测</returns>
+        </member>
+        <member name="M:CodeCalc.Analyse.VBProjectDocument.LoadProjectFile(System.String)">
+            <summary>
+            加载项目文件
+            </summary>
+            <param name="fileName">文件名</param>
+        </member>
+        <member name="T:CodeCalc.Abstract.FileHelper">
+            <summary>
+            文件处理工具类
+            </summary>
+            <remarks>
+            作者：北冥冰皇
+            创建日期：2018-05-04
+            修改日期：2018-05-04
+            </remarks>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileHelper.SplitPattern(System.String)">
+            <summary>
+            完整路径字符串转换为目录名和文件名
+            </summary>
+            <param name="path">完整路径字符串</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileHelper.FormatFileSize(System.Int32)">
+            <summary>
+            格式化输出文件字节数
+            </summary>
+            <param name="FileSize">文件字节数</param>
+            <returns>输出的字符串</returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileHelper.LoadBinaryFile(System.String)">
+            <summary>
+            读取文件二进制数据
+            </summary>
+            <param name="file">文件完整路径</param>
+            <returns>字节数组</returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileHelper.SaveBinaryFile(System.String,System.Byte[])">
+            <summary>
+            保存文件二进制数据
+            </summary>
+            <param name="file">文件完整路径</param>
+            <param name="bytes">字节数组</param>
+            <returns>成功返回true，否则返回false</returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileHelper.LoadAnsiFile(System.String)">
+            <summary>
+            GB2312编码格式读取文件
+            </summary>
+            <param name="file">文件完整路径</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileHelper.SaveAnsiFile(System.String,System.String)">
+            <summary>
+            GB2312编码格式保存文件
+            </summary>
+            <param name="file">文件完整路径</param>
+            <param name="txt">保存文本</param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileHelper.CheckFileNameInValidChar(System.String)">
+            <summary>
+            检测文件名是否合法
+            </summary>
+            <param name="fileName">文件名</param>
+            <returns>不合法返回false，否则返回true</returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileHelper.GetExtension(System.String)">
+            <summary>
+            文件名扩展名-大写形式
+            </summary>
+            <param name="fileName">文件名</param>
+            <returns>正常返回扩展名字符串，否则返回null</returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileHelper.FixDirectoryName(System.String)">
+            <summary>
+            修正文件夹结尾分隔符
+            </summary>
+            <param name="dir">文件夹路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeCalc.Abstract.FileHelper.GetSimpleName(System.String)">
+            <summary>
+            无目录无扩展名简单文件名
+            </summary>
+            <param name="path">路径名</param>
+            <returns></returns>
+        </member>
+        <member name="T:CodeCalc.Entity.LineEntity">
+            <summary>
+            行实体
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.LineEntity.LineText">
+            <summary>
+            行文本
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.LineEntity.CommentFlag">
+            <summary>
+            该文本行为注释行标志
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.LineEntity.BlankLine">
+            <summary>
+            该文本行为空白行标志
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Entity.LineEntity.CodeFlag">
+            <summary>
+            该文本行为代码行标志
+            </summary>
+        </member>
+        <member name="M:CodeCalc.FrmMain.btnLook_Click(System.Object,System.EventArgs)">
+            <summary>
+            浏览文档
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CodeCalc.FrmMain.btnAnalysis_Click(System.Object,System.EventArgs)">
+            <summary>
+            分析工程
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:CodeCalc.FrmMain.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:CodeCalc.FrmMain.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:CodeCalc.FrmMain.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:CodeCalc.Program.Main">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="M:CodeCalc.StringHelper.ToInt32Value(System.String,System.Int32)">
+            <summary>
+            字符串转换为整数
+            </summary>
+            <param name="str">字符串</param>
+            <param name="DefaultValue">默认值</param>
+            <returns>转换结果</returns>
+        </member>
+        <member name="M:CodeCalc.StringHelper.isBlankString(System.String)">
+            <summary>
+            是否空白字符串
+            </summary>
+            <param name="str">字符串</param>
+            <returns>若字符串为空或者全部有空白字符组成则返回True,否则返回false</returns>
+        </member>
+        <member name="M:CodeCalc.StringHelper.HasContent(System.String)">
+            <summary>
+            是否内容字符串
+            </summary>
+            <param name="str">字符串</param>
+            <returns>若字符串不为空且存在非空白字符则返回True 否则返回False</returns>
+        </member>
+        <member name="T:CodeCalc.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的、缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:CodeCalc.Properties.Resources.Culture">
+            <summary>
+              为所有资源查找重写当前线程的 CurrentUICulture 属性，
+              方法是使用此强类型资源类。
+            </summary>
+        </member>
+    </members>
+</doc>

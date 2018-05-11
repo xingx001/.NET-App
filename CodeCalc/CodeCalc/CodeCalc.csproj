@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\CodeCalc.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,13 +48,13 @@
     <Compile Include="Abstract\FileAnalyser.cs" />
     <Compile Include="Analyse\CSFileAnalyser.cs" />
     <Compile Include="Analyse\CSProjectDocument.cs" />
-    <Compile Include="Analyse\FileEntity.cs" />
-    <Compile Include="Analyse\FileCollection.cs" />
-    <Compile Include="Analyse\ProjectEntity.cs" />
+    <Compile Include="Entity\FileEntity.cs" />
+    <Compile Include="Collection\FileCollection.cs" />
+    <Compile Include="Entity\ProjectEntity.cs" />
     <Compile Include="Analyse\VBFileAnalyser.cs" />
     <Compile Include="Analyse\VBProjectDocument.cs" />
     <Compile Include="FileHelper.cs" />
-    <Compile Include="Analyse\LineEntity.cs" />
+    <Compile Include="Entity\LineEntity.cs" />
     <Compile Include="Abstract\ProjectDocument.cs" />
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>

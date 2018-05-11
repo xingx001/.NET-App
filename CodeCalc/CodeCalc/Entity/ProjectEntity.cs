@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CodeCalc.Analyse
+namespace CodeCalc.Entity
 {
     /// <summary>
     /// 工程文件实体
