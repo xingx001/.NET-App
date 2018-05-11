@@ -28,3 +28,5 @@ E:\BaiduNetdiskDownload\Loaner\Loaner_20180427\Loaner\Loaner\Loaner\obj\Debug\Lo
 E:\BaiduNetdiskDownload\Loaner\Loaner_20180427\Loaner\Loaner\Loaner\obj\Debug\Loaner.FrmMain.resources
 E:\BaiduNetdiskDownload\Loaner\Loaner_20180427\Loaner\Loaner\Loaner\obj\Debug\Loaner.Properties.Resources.resources
 E:\BaiduNetdiskDownload\Loaner\Loaner_20180427\Loaner\Loaner\Loaner\obj\Debug\Loaner.csproj.GenerateResource.Cache
+D:\c\github\.NET-App\Loaner\Loaner\obj\Debug\Loaner.exe
+D:\c\github\.NET-App\Loaner\Loaner\obj\Debug\Loaner.pdb

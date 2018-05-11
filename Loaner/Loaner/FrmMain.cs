@@ -64,6 +64,8 @@ namespace Loaner
             this.cmbYear.Items.Add("28");
             this.cmbYear.Items.Add("29");
             this.cmbYear.Items.Add("30");
+            this.cmbYear.SelectedIndex = 10;
+
             this.txtGongRate.Text = "3.25";
             this.txtShangRate.Text = "4.9";
             this.txtShangUp.Text = "25";
