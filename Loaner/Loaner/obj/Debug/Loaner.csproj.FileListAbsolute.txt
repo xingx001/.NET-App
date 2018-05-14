@@ -30,3 +30,12 @@ E:\BaiduNetdiskDownload\Loaner\Loaner_20180427\Loaner\Loaner\Loaner\obj\Debug\Lo
 E:\BaiduNetdiskDownload\Loaner\Loaner_20180427\Loaner\Loaner\Loaner\obj\Debug\Loaner.csproj.GenerateResource.Cache
 D:\c\github\.NET-App\Loaner\Loaner\obj\Debug\Loaner.exe
 D:\c\github\.NET-App\Loaner\Loaner\obj\Debug\Loaner.pdb
+D:\c\github\.NET-App\Loaner\Loaner\bin\Debug\Loaner.exe.config
+D:\c\github\.NET-App\Loaner\Loaner\bin\Debug\Loaner.exe
+D:\c\github\.NET-App\Loaner\Loaner\bin\Debug\Loaner.pdb
+D:\c\github\.NET-App\Loaner\Loaner\bin\Debug\Z.Base.dll
+D:\c\github\.NET-App\Loaner\Loaner\bin\Debug\log4net.dll
+D:\c\github\.NET-App\Loaner\Loaner\obj\Debug\Loaner.csprojResolveAssemblyReference.cache
+D:\c\github\.NET-App\Loaner\Loaner\obj\Debug\Loaner.FrmMain.resources
+D:\c\github\.NET-App\Loaner\Loaner\obj\Debug\Loaner.Properties.Resources.resources
+D:\c\github\.NET-App\Loaner\Loaner\obj\Debug\Loaner.csproj.GenerateResource.Cache

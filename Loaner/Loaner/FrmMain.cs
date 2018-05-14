@@ -13,7 +13,7 @@ namespace Loaner
     {
         private double fTotal = 0f;
         private double fpay = 0f;
-        private string format="000000.000000";
+        private string format="0.0000";
         private bool isNum;
 
         #region 构造函数
@@ -66,9 +66,9 @@ namespace Loaner
             this.cmbYear.Items.Add("30");
             this.cmbYear.SelectedIndex = 10;
 
-            this.txtGongRate.Text = "3.25";
-            this.txtShangRate.Text = "4.9";
-            this.txtShangUp.Text = "25";
+            this.txtGongRate.Text = Z.Base.Util.Settings.FloatVal(null, "GongRate").ToString();
+            this.txtShangRate.Text = Z.Base.Util.Settings.FloatVal(null, "ShangRate").ToString();
+            this.txtShangUp.Text = Z.Base.Util.Settings.FloatVal(null, "ShangUp").ToString();
         }
         #endregion
 
@@ -101,14 +101,14 @@ namespace Loaner
             double sMonth = (sMoney * sMonthRate * sPower) / (sPower - 1);
 
             this.txt.Clear();
-            this.txt.AppendText(string.Format("公积金贷款金额：{0} \r\n", gMoney));
-            this.txt.AppendText(string.Format("公积金每月还款：{0} \r\n", gMonth));
+            this.txt.AppendText(string.Format("公积金贷款金额：{0} 万元 \r\n", gMoney.ToString(this.format)));
+            this.txt.AppendText(string.Format("公积金每月还款：{0} 万元 \r\n", gMonth.ToString(this.format)));
 
-            this.txt.AppendText(string.Format("商业贷款金额：{0} \r\n", sMoney));
-            this.txt.AppendText(string.Format("商业贷款每月还款：{0} \r\n", sMonth));
+            this.txt.AppendText(string.Format("商业贷款金额：{0} 万元 \r\n", sMoney.ToString(this.format)));
+            this.txt.AppendText(string.Format("商业贷款每月还款：{0} 万元 \r\n", sMonth.ToString(this.format)));
 
-            this.txt.AppendText(string.Format("总贷款金额：{0} \r\n", sMoney + gMoney));
-            this.txt.AppendText(string.Format("总贷款每月还款：{0} \r\n", sMonth + gMonth));
+            this.txt.AppendText(string.Format("总贷款金额：{0} 万元 \r\n", (sMoney + gMoney).ToString(this.format)));
+            this.txt.AppendText(string.Format("总贷款每月还款：{0} 万元 \r\n", (sMonth + gMonth).ToString(this.format)));
 
             this.txt.AppendText(string.Format("还款月数：{0} \r\n", monthNum));
         }

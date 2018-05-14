@@ -140,7 +140,7 @@
             this.cmbYear.Location = new System.Drawing.Point(123, 67);
             this.cmbYear.Name = "cmbYear";
             this.cmbYear.Size = new System.Drawing.Size(94, 20);
-            this.cmbYear.TabIndex = 1;
+            this.cmbYear.TabIndex = 2;
             // 
             // lbYear
             // 
@@ -168,7 +168,7 @@
             this.txtGongMoney.Location = new System.Drawing.Point(123, 98);
             this.txtGongMoney.Name = "txtGongMoney";
             this.txtGongMoney.Size = new System.Drawing.Size(94, 21);
-            this.txtGongMoney.TabIndex = 4;
+            this.txtGongMoney.TabIndex = 3;
             // 
             // lbYuan1
             // 
@@ -206,7 +206,7 @@
             this.txtGongRate.Location = new System.Drawing.Point(123, 129);
             this.txtGongRate.Name = "txtGongRate";
             this.txtGongRate.Size = new System.Drawing.Size(94, 21);
-            this.txtGongRate.TabIndex = 9;
+            this.txtGongRate.TabIndex = 4;
             // 
             // lbShangye
             // 
@@ -224,7 +224,7 @@
             this.txtShangMoney.Location = new System.Drawing.Point(123, 160);
             this.txtShangMoney.Name = "txtShangMoney";
             this.txtShangMoney.Size = new System.Drawing.Size(94, 21);
-            this.txtShangMoney.TabIndex = 11;
+            this.txtShangMoney.TabIndex = 5;
             // 
             // lbShangyeRate
             // 
@@ -242,7 +242,7 @@
             this.txtShangRate.Location = new System.Drawing.Point(123, 191);
             this.txtShangRate.Name = "txtShangRate";
             this.txtShangRate.Size = new System.Drawing.Size(94, 21);
-            this.txtShangRate.TabIndex = 14;
+            this.txtShangRate.TabIndex = 6;
             // 
             // lb1001
             // 
@@ -270,7 +270,7 @@
             this.txtShangUp.Location = new System.Drawing.Point(123, 222);
             this.txtShangUp.Name = "txtShangUp";
             this.txtShangUp.Size = new System.Drawing.Size(94, 21);
-            this.txtShangUp.TabIndex = 17;
+            this.txtShangUp.TabIndex = 7;
             // 
             // lb1002
             // 
@@ -289,7 +289,7 @@
             this.txt.Name = "txt";
             this.tlpFather.SetRowSpan(this.txt, 7);
             this.txt.Size = new System.Drawing.Size(224, 211);
-            this.txt.TabIndex = 19;
+            this.txt.TabIndex = 9;
             this.txt.Text = "";
             // 
             // lbTotal
@@ -308,7 +308,7 @@
             this.txtTotalMoney.Location = new System.Drawing.Point(123, 5);
             this.txtTotalMoney.Name = "txtTotalMoney";
             this.txtTotalMoney.Size = new System.Drawing.Size(94, 21);
-            this.txtTotalMoney.TabIndex = 21;
+            this.txtTotalMoney.TabIndex = 0;
             // 
             // lbYuan3
             // 
@@ -336,7 +336,7 @@
             this.txtPay.Location = new System.Drawing.Point(123, 36);
             this.txtPay.Name = "txtPay";
             this.txtPay.Size = new System.Drawing.Size(94, 21);
-            this.txtPay.TabIndex = 24;
+            this.txtPay.TabIndex = 1;
             // 
             // lbYuan
             // 
@@ -364,7 +364,7 @@
             this.btnCalc.Location = new System.Drawing.Point(123, 251);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(94, 25);
-            this.btnCalc.TabIndex = 27;
+            this.btnCalc.TabIndex = 8;
             this.btnCalc.Text = "计算";
             this.btnCalc.UseVisualStyleBackColor = true;
             this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
@@ -375,7 +375,7 @@
             this.btnReset.Location = new System.Drawing.Point(123, 282);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(94, 29);
-            this.btnReset.TabIndex = 28;
+            this.btnReset.TabIndex = 10;
             this.btnReset.Text = "重置";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
