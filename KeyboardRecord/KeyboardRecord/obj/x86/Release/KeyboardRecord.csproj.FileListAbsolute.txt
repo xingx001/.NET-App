@@ -1,0 +1,16 @@
+F:\Work\Class\KeyboardRecord\KeyboardRecord\bin\Release\KeyboardRecord.exe.config
+F:\Work\Class\KeyboardRecord\KeyboardRecord\bin\Release\KeyboardRecord.exe
+F:\Work\Class\KeyboardRecord\KeyboardRecord\bin\Release\KeyboardRecord.pdb
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Release\ResolveAssemblyReference.cache
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Release\KeyboardRecord.frm.resources
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Release\KeyboardRecord.Properties.Resources.resources
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Release\GenerateResource.read.1.tlog
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Release\GenerateResource.write.1.tlog
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Release\KeyboardRecord.exe
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Release\KeyboardRecord.pdb
+E:\BaiduNetdiskDownload\KeyboardRecord\KeyboardRecord\KeyboardRecord\bin\Release\KeyboardRecord.exe.config
+E:\BaiduNetdiskDownload\KeyboardRecord\KeyboardRecord\KeyboardRecord\obj\x86\Release\KeyboardRecord.exe
+E:\BaiduNetdiskDownload\KeyboardRecord\KeyboardRecord\KeyboardRecord\obj\x86\Release\KeyboardRecord.pdb
+D:\c\github\WinForm-Demo\KeyboardRecord\KeyboardRecord\bin\Release\KeyboardRecord.exe.config
+D:\c\github\WinForm-Demo\KeyboardRecord\KeyboardRecord\obj\x86\Release\KeyboardRecord.exe
+D:\c\github\WinForm-Demo\KeyboardRecord\KeyboardRecord\obj\x86\Release\KeyboardRecord.pdb

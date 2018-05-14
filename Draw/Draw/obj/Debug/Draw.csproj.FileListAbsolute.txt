@@ -1,0 +1,11 @@
+D:\Work\DEMO\Draw\Draw\obj\Debug\Draw.csprojResolveAssemblyReference.cache
+D:\Work\DEMO\Draw\Draw\obj\Debug\Draw.FrmMain.resources
+D:\Work\DEMO\Draw\Draw\obj\Debug\Draw.Properties.Resources.resources
+D:\Work\DEMO\Draw\Draw\obj\Debug\Draw.csproj.GenerateResource.Cache
+D:\Work\DEMO\Draw\Draw\bin\Debug\Draw.exe
+D:\Work\DEMO\Draw\Draw\bin\Debug\Draw.pdb
+D:\Work\DEMO\Draw\Draw\bin\Debug\C1.C1Excel.4.xml
+D:\Work\DEMO\Draw\Draw\obj\Debug\Draw.exe
+D:\Work\DEMO\Draw\Draw\obj\Debug\Draw.pdb
+D:\c\github\WinForm-Demo\Draw\Draw\obj\Debug\Draw.exe
+D:\c\github\WinForm-Demo\Draw\Draw\obj\Debug\Draw.pdb

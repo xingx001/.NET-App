@@ -1,0 +1,10 @@
+F:\Work\Class\KeyboardRecord\KeyboardRecord\bin\Debug\KeyboardRecord.exe
+F:\Work\Class\KeyboardRecord\KeyboardRecord\bin\Debug\KeyboardRecord.pdb
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Debug\KeyboardRecord.frm.resources
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Debug\KeyboardRecord.Properties.Resources.resources
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Debug\KeyboardRecord.exe
+F:\Work\Class\KeyboardRecord\KeyboardRecord\obj\x86\Debug\KeyboardRecord.pdb
+F:\Work\Class\KeyboardRecord\KeyboardRecord\bin\Debug\KeyboardRecord.exe.config
