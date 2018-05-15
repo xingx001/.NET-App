@@ -1,0 +1,6 @@
+D:\Work\DEMO\NetSpider\NetSpider\bin\Debug\NetSpider.dll.config
+D:\Work\DEMO\NetSpider\NetSpider\bin\Debug\NetSpider.dll
+D:\Work\DEMO\NetSpider\NetSpider\bin\Debug\NetSpider.pdb
+D:\Work\DEMO\NetSpider\NetSpider\obj\Debug\NetSpider.csprojResolveAssemblyReference.cache
+D:\Work\DEMO\NetSpider\NetSpider\obj\Debug\NetSpider.dll
+D:\Work\DEMO\NetSpider\NetSpider\obj\Debug\NetSpider.pdb

@@ -1,0 +1,11 @@
+D:\Work\DEMO\NetSpider\NetSpider.Demo\bin\Debug\NetSpider.Demo.exe.config
+D:\Work\DEMO\NetSpider\NetSpider.Demo\bin\Debug\NetSpider.Demo.exe
+D:\Work\DEMO\NetSpider\NetSpider.Demo\bin\Debug\NetSpider.Demo.pdb
+D:\Work\DEMO\NetSpider\NetSpider.Demo\bin\Debug\NetSpider.dll
+D:\Work\DEMO\NetSpider\NetSpider.Demo\bin\Debug\NetSpider.pdb
+D:\Work\DEMO\NetSpider\NetSpider.Demo\obj\Debug\NetSpider.Demo.csprojResolveAssemblyReference.cache
+D:\Work\DEMO\NetSpider\NetSpider.Demo\obj\Debug\NetSpider.Demo.exe
+D:\Work\DEMO\NetSpider\NetSpider.Demo\obj\Debug\NetSpider.Demo.pdb
+D:\c\github\.NET-App\NetSpider\NetSpider.Demo\bin\Debug\NetSpider.Demo.exe.config
+D:\c\github\.NET-App\NetSpider\NetSpider.Demo\obj\Debug\NetSpider.Demo.exe
+D:\c\github\.NET-App\NetSpider\NetSpider.Demo\obj\Debug\NetSpider.Demo.pdb
