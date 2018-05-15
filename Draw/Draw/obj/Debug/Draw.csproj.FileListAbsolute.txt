@@ -9,3 +9,5 @@ D:\Work\DEMO\Draw\Draw\obj\Debug\Draw.exe
 D:\Work\DEMO\Draw\Draw\obj\Debug\Draw.pdb
 D:\c\github\WinForm-Demo\Draw\Draw\obj\Debug\Draw.exe
 D:\c\github\WinForm-Demo\Draw\Draw\obj\Debug\Draw.pdb
+D:\c\github\.NET-App\Draw\Draw\obj\Debug\Draw.exe
+D:\c\github\.NET-App\Draw\Draw\obj\Debug\Draw.pdb

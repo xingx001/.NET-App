@@ -14,3 +14,6 @@ E:\BaiduNetdiskDownload\KeyboardRecord\KeyboardRecord\KeyboardRecord\obj\x86\Rel
 D:\c\github\WinForm-Demo\KeyboardRecord\KeyboardRecord\bin\Release\KeyboardRecord.exe.config
 D:\c\github\WinForm-Demo\KeyboardRecord\KeyboardRecord\obj\x86\Release\KeyboardRecord.exe
 D:\c\github\WinForm-Demo\KeyboardRecord\KeyboardRecord\obj\x86\Release\KeyboardRecord.pdb
+D:\c\github\.NET-App\KeyboardRecord\KeyboardRecord\bin\Release\KeyboardRecord.exe.config
+D:\c\github\.NET-App\KeyboardRecord\KeyboardRecord\obj\x86\Release\KeyboardRecord.exe
+D:\c\github\.NET-App\KeyboardRecord\KeyboardRecord\obj\x86\Release\KeyboardRecord.pdb
