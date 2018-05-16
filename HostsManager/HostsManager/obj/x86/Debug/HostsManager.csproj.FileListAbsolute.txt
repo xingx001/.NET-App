@@ -1,0 +1,17 @@
+D:\Work\HostsManager\HostsManager\HostsManager\bin\Debug\HostsManager.exe.config
+D:\Work\HostsManager\HostsManager\HostsManager\bin\Debug\HostsManager.exe
+D:\Work\HostsManager\HostsManager\HostsManager\bin\Debug\HostsManager.pdb
+D:\Work\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.frmMain.resources
+D:\Work\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.Properties.Resources.resources
+D:\Work\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.csproj.GenerateResource.Cache
+D:\Work\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.exe
+D:\Work\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.pdb
+E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\bin\Debug\HostsManager.exe.config
+E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.exe
+E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.pdb
+E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\bin\Debug\HostsManager.exe
+E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\bin\Debug\HostsManager.pdb
+E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.csprojResolveAssemblyReference.cache
+E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.frmMain.resources
+E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.Properties.Resources.resources
+E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.csproj.GenerateResource.Cache
