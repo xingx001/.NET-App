@@ -15,3 +15,6 @@ E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\obj\x86\Debug\Hos
 E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.frmMain.resources
 E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.Properties.Resources.resources
 E:\BaiduNetdiskDownload\HostsManager\HostsManager\HostsManager\obj\x86\Debug\HostsManager.csproj.GenerateResource.Cache
+D:\c\github\.NET-App\HostsManager\HostsManager\bin\Debug\HostsManager.exe.config
+D:\c\github\.NET-App\HostsManager\HostsManager\obj\x86\Debug\HostsManager.exe
+D:\c\github\.NET-App\HostsManager\HostsManager\obj\x86\Debug\HostsManager.pdb

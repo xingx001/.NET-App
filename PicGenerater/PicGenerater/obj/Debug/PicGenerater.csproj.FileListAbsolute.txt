@@ -5,3 +5,5 @@ D:\Work\DEMO\PicGenerater\PicGenerater\obj\Debug\PicGenerater.Properties.Resourc
 D:\Work\DEMO\PicGenerater\PicGenerater\obj\Debug\PicGenerater.csproj.GenerateResource.Cache
 D:\Work\DEMO\PicGenerater\PicGenerater\obj\Debug\PicGenerater.exe
 D:\Work\DEMO\PicGenerater\PicGenerater\obj\Debug\PicGenerater.pdb
+D:\c\github\.NET-App\PicGenerater\PicGenerater\obj\Debug\PicGenerater.exe
+D:\c\github\.NET-App\PicGenerater\PicGenerater\obj\Debug\PicGenerater.pdb
