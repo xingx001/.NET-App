@@ -1,0 +1,5 @@
+E:\Work\SVN\BootUp\BootUp\bin\Debug\BootUp.exe.config
+E:\Work\SVN\BootUp\BootUp\bin\Debug\BootUp.exe
+E:\Work\SVN\BootUp\BootUp\bin\Debug\BootUp.pdb
+E:\Work\SVN\BootUp\BootUp\obj\x86\Debug\BootUp.exe
+E:\Work\SVN\BootUp\BootUp\obj\x86\Debug\BootUp.pdb

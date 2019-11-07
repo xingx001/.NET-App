@@ -1,0 +1,12 @@
+E:\Work\Demo\Ping\Ping\bin\Debug\Ping.exe.config
+E:\Work\Demo\Ping\Ping\bin\Debug\Ping.exe
+E:\Work\Demo\Ping\Ping\bin\Debug\Ping.pdb
+E:\Work\Demo\Ping\Ping\obj\x86\Debug\Ping.FrmMain.resources
+E:\Work\Demo\Ping\Ping\obj\x86\Debug\Ping.Properties.Resources.resources
+E:\Work\Demo\Ping\Ping\obj\x86\Debug\Ping.csproj.GenerateResource.Cache
+E:\Work\Demo\Ping\Ping\obj\x86\Debug\Ping.exe
+E:\Work\Demo\Ping\Ping\obj\x86\Debug\Ping.pdb
+E:\Work\Demo\Ping\Ping\obj\x86\Debug\Ping.csprojResolveAssemblyReference.cache
+E:\Work\github\.NET-App\Ping\Ping\bin\Debug\Ping.exe.config
+E:\Work\github\.NET-App\Ping\Ping\obj\x86\Debug\Ping.exe
+E:\Work\github\.NET-App\Ping\Ping\obj\x86\Debug\Ping.pdb
