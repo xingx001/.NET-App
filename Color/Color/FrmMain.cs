@@ -78,8 +78,8 @@ namespace Color
             this.BarG.ValueChanged += Bar_ValueChanged;
             this.BarR.ValueChanged += Bar_ValueChanged;
 
-            this.MouseHook.SetHook();
-            this.MouseHook.MouseMoveEvent += MouseHook_MouseMoveEvent;
+            this.MouseHook.Hook();
+            this.MouseHook.MouseMove += MouseHook_MouseMoveEvent;
         }
         #endregion
 

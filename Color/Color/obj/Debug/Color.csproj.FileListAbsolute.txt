@@ -6,3 +6,11 @@ E:\Work\Demo\Color\Color\obj\Debug\Color.csproj.GenerateResource.cache
 E:\Work\Demo\Color\Color\obj\Debug\Color.csproj.CoreCompileInputs.cache
 E:\Work\Demo\Color\Color\obj\Debug\Color.exe
 E:\Work\Demo\Color\Color\obj\Debug\Color.pdb
+E:\Work\github\.NET-App\Color\Color\obj\Debug\Color.csprojAssemblyReference.cache
+E:\Work\github\.NET-App\Color\Color\obj\Debug\Color.FrmMain.resources
+E:\Work\github\.NET-App\Color\Color\obj\Debug\Color.Properties.Resources.resources
+E:\Work\github\.NET-App\Color\Color\obj\Debug\Color.csproj.GenerateResource.cache
+E:\Work\github\.NET-App\Color\Color\obj\Debug\Color.exe
+E:\Work\github\.NET-App\Color\Color\obj\Debug\Color.pdb
+E:\Work\github\.NET-App\Color\Color\bin\Debug\Color.exe
+E:\Work\github\.NET-App\Color\Color\bin\Debug\Color.pdb

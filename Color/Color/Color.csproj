@@ -68,7 +68,11 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalHook.cs" />
+    <Compile Include="KeyboardHook.cs" />
+    <Compile Include="KeyboardSimulator.cs" />
     <Compile Include="MouseHook.cs" />
+    <Compile Include="MouseSimulator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmMain.resx">

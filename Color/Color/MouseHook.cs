@@ -1,6 +1,14 @@
-﻿using System;
+﻿#region AUTHOR
+/*******************************
+**  AUTHOR:     ZHANGYP
+**    TIME:     2019/11/22 11:43:06
+** VERSION:     V1.0.0
+**    GUID:     6ab70f56-7304-417f-a7a7-b193d568ad85
+*******************************/
+#endregion
+
+using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -8,87 +16,161 @@ using System.Windows.Forms;
 
 namespace Color
 {
-    /// <summary>
-    /// Win32 Api鼠标钩子
-    /// </summary>
-    /// <remarks>
-    /// @author zhangyp
-    /// @since  19-04-01
-    /// </remarks>
-    public class MouseHook
+    public class MouseHook : GlobalHook
     {
-        public delegate int HookProc(int nCode, IntPtr wParam, IntPtr lParam);
-        //安装钩子
-        [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
-        public static extern int SetWindowsHookEx(int idHook, HookProc lpfn, IntPtr hInstance, int threadId);
-        //卸载钩子
-        [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
-        public static extern bool UnhookWindowsHookEx(int idHook);
-        //调用下一个钩子
-        [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
-        public static extern int CallNextHookEx(int idHook, int nCode, IntPtr wParam, IntPtr lParam);
 
-        private Point point;
-        private Point Point
+        #region MouseEventType Enum
+
+        private enum MouseEventType
         {
-            get { return point; }
-            set
-            {
-                if (point == value)
-                    return;
-                point = value;
-                MouseMoveEvent?.Invoke(this, new MouseEventArgs(MouseButtons.Left, 0, point.X, point.Y, 0));
-            }
+            None,
+            MouseDown,
+            MouseUp,
+            DoubleClick,
+            MouseWheel,
+            MouseMove
         }
 
-        private int hHook;
-        public const int WH_MOUSE_LL = 14;
-        public HookProc hProc;
+        #endregion
+
+        #region Events
+
+        public event MouseEventHandler MouseDown;
+        public event MouseEventHandler MouseUp;
+        public event MouseEventHandler MouseMove;
+        public event MouseEventHandler MouseWheel;
+
+        public event EventHandler Click;
+        public event EventHandler DoubleClick;
+
+        #endregion
+
+        #region Constructor
         public MouseHook()
         {
-            this.Point = new Point();
+            _hookType = WH_MOUSE_LL;
         }
-        public int SetHook()
+        #endregion
+
+        #region Methods
+
+        protected override int HookCallbackProc(int nCode, int wParam, IntPtr lParam)
         {
-            hProc = new HookProc(MouseHookProc);
-            hHook = SetWindowsHookEx(WH_MOUSE_LL, hProc, IntPtr.Zero, 0);
-            return hHook;
-        }
-        public void UnHook()
-        {
-            UnhookWindowsHookEx(hHook);
-        }
-        private int MouseHookProc(int nCode, IntPtr wParam, IntPtr lParam)
-        {
-            MouseHookStruct MyMouseHookStruct = (MouseHookStruct)Marshal.PtrToStructure(lParam, typeof(MouseHookStruct));
-            if (nCode < 0)
+
+            if (nCode > -1 && (MouseDown != null || MouseUp != null || MouseMove != null))
             {
-                return CallNextHookEx(hHook, nCode, wParam, lParam);
+
+                MouseLLHookStruct mouseHookStruct =
+                    (MouseLLHookStruct)Marshal.PtrToStructure(lParam, typeof(MouseLLHookStruct));
+
+                MouseButtons button = GetButton(wParam);
+                MouseEventType eventType = GetEventType(wParam);
+
+                MouseEventArgs e = new MouseEventArgs(
+                    button,
+                    (eventType == MouseEventType.DoubleClick ? 2 : 1),
+                    mouseHookStruct.pt.x,
+                    mouseHookStruct.pt.y,
+                    (eventType == MouseEventType.MouseWheel ? (short)((mouseHookStruct.mouseData >> 16) & 0xffff) : 0));
+
+                // Prevent multiple Right Click events (this probably happens for popup menus)
+                if (button == MouseButtons.Right && mouseHookStruct.flags != 0)
+                {
+                    eventType = MouseEventType.None;
+                }
+
+                switch (eventType)
+                {
+                    case MouseEventType.MouseDown:
+                        if (MouseDown != null)
+                        {
+                            MouseDown(this, e);
+                        }
+                        break;
+                    case MouseEventType.MouseUp:
+                        if (Click != null)
+                        {
+                            Click(this, new EventArgs());
+                        }
+                        if (MouseUp != null)
+                        {
+                            MouseUp(this, e);
+                        }
+                        break;
+                    case MouseEventType.DoubleClick:
+                        if (DoubleClick != null)
+                        {
+                            DoubleClick(this, new EventArgs());
+                        }
+                        break;
+                    case MouseEventType.MouseWheel:
+                        if (MouseWheel != null)
+                        {
+                            MouseWheel(this, e);
+                        }
+                        break;
+                    case MouseEventType.MouseMove:
+                        if (MouseMove != null)
+                        {
+                            MouseMove(this, e);
+                        }
+                        break;
+                    default:
+                        break;
+                }
+
             }
-            else
+
+            return CallNextHookEx(_hHook, nCode, wParam, lParam);
+        }
+
+        private MouseButtons GetButton(Int32 wParam)
+        {
+            switch (wParam)
             {
-                this.Point = new Point(MyMouseHookStruct.pt.x, MyMouseHookStruct.pt.y);
-                return CallNextHookEx(hHook, nCode, wParam, lParam);
+                case WM_LBUTTONDOWN:
+                case WM_LBUTTONUP:
+                case WM_LBUTTONDBLCLK:
+                    return MouseButtons.Left;
+                case WM_RBUTTONDOWN:
+                case WM_RBUTTONUP:
+                case WM_RBUTTONDBLCLK:
+                    return MouseButtons.Right;
+                case WM_MBUTTONDOWN:
+                case WM_MBUTTONUP:
+                case WM_MBUTTONDBLCLK:
+                    return MouseButtons.Middle;
+                default:
+                    return MouseButtons.None;
             }
         }
-        //委托+事件（把钩到的消息封装为事件，由调用者处理）
-        public delegate void MouseMoveHandler(object sender, MouseEventArgs e);
-        public event MouseMoveHandler MouseMoveEvent;
+
+        private MouseEventType GetEventType(Int32 wParam)
+        {
+            switch (wParam)
+            {
+                case WM_LBUTTONDOWN:
+                case WM_RBUTTONDOWN:
+                case WM_MBUTTONDOWN:
+                    return MouseEventType.MouseDown;
+                case WM_LBUTTONUP:
+                case WM_RBUTTONUP:
+                case WM_MBUTTONUP:
+                    return MouseEventType.MouseUp;
+                case WM_LBUTTONDBLCLK:
+                case WM_RBUTTONDBLCLK:
+                case WM_MBUTTONDBLCLK:
+                    return MouseEventType.DoubleClick;
+                case WM_MOUSEWHEEL:
+                    return MouseEventType.MouseWheel;
+                case WM_MOUSEMOVE:
+                    return MouseEventType.MouseMove;
+                default:
+                    return MouseEventType.None;
+            }
+        }
+        #endregion
 
     }
 
-    [StructLayout(LayoutKind.Sequential)]
-    public class POINT
-    {
-        public int x;
-        public int y;
-    }
-    [StructLayout(LayoutKind.Sequential)]
-    public class MouseHookStruct
-    {
-        public POINT pt;
-        public int hwnd;
-        public int wHitTestCode;
-        public int dwExtraInfo;
-    }
 }
