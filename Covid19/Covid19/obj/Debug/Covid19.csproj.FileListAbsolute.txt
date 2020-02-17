@@ -1,0 +1,10 @@
+E:\Work\B-Demo\Covid19\Covid19\bin\Debug\Covid19.exe
+E:\Work\B-Demo\Covid19\Covid19\bin\Debug\Covid19.pdb
+E:\Work\B-Demo\Covid19\Covid19\obj\Debug\Covid19.csprojAssemblyReference.cache
+E:\Work\B-Demo\Covid19\Covid19\obj\Debug\Covid19.FrmMain.resources
+E:\Work\B-Demo\Covid19\Covid19\obj\Debug\Covid19.Properties.Resources.resources
+E:\Work\B-Demo\Covid19\Covid19\obj\Debug\Covid19.csproj.GenerateResource.cache
+E:\Work\B-Demo\Covid19\Covid19\obj\Debug\Covid19.exe
+E:\Work\B-Demo\Covid19\Covid19\obj\Debug\Covid19.pdb
+E:\Work\B-Demo\Covid19\Covid19\bin\Debug\Newtonsoft.Json.dll
+E:\Work\B-Demo\Covid19\Covid19\obj\Debug\Covid19.csproj.CopyComplete
