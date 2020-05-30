@@ -1,0 +1,10 @@
+E:\Work\U-Util\AutoVPN\AutoVPN\bin\Debug\AutoVPN.exe
+E:\Work\U-Util\AutoVPN\AutoVPN\bin\Debug\AutoVPN.pdb
+E:\Work\U-Util\AutoVPN\AutoVPN\bin\Debug\DotRas.dll
+E:\Work\U-Util\AutoVPN\AutoVPN\obj\Debug\AutoVPN.csprojAssemblyReference.cache
+E:\Work\U-Util\AutoVPN\AutoVPN\obj\Debug\AutoVPN.FrmMain.resources
+E:\Work\U-Util\AutoVPN\AutoVPN\obj\Debug\AutoVPN.Properties.Resources.resources
+E:\Work\U-Util\AutoVPN\AutoVPN\obj\Debug\AutoVPN.csproj.GenerateResource.cache
+E:\Work\U-Util\AutoVPN\AutoVPN\obj\Debug\AutoVPN.csproj.CopyComplete
+E:\Work\U-Util\AutoVPN\AutoVPN\obj\Debug\AutoVPN.exe
+E:\Work\U-Util\AutoVPN\AutoVPN\obj\Debug\AutoVPN.pdb
