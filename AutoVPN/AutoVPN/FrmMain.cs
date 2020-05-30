@@ -134,8 +134,8 @@ namespace AutoVPN
                 if (!string.IsNullOrEmpty(this.cmbPhoneNumber.Text))
                 {
                     RasEntry newEntry = RasEntry.CreateVpnEntry(EntryName,
-                        this.cmbPhoneNumber.Text, RasVpnStrategy.L2tpOnly,
-                    RasDevice.GetDeviceByName("(L2TP)", RasDeviceType.Vpn));
+                        this.cmbPhoneNumber.Text, RasVpnStrategy.PptpOnly,
+                    RasDevice.GetDeviceByName("(PPTP)", RasDeviceType.Vpn), false);
                     AddRasEntry(newEntry);
                     AddEntry(newEntry);
                     selectItem = new ComboBoxItem { Text = this.cmbPhoneNumber.Text, Val = EntryName };
